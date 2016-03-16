@@ -20,7 +20,7 @@ gem 'compass', '~> 0.13.alpha'
 
 gem 'jquery-rails', '3.1.3'
 
-
+gem "mysql2"
 
 group :development, :test do
     #gem "mysql2", "~> 0.3.14"
