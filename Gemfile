@@ -22,7 +22,8 @@ gem 'jquery-rails', '3.1.3'
 
 
 group :development, :test do
-  gem "mysql2", "~> 0.3.14"
+  #gem "mysql2", "~> 0.3.14"
+    gem 'pg' 
 end
 
 group :production do
