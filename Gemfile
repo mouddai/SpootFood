@@ -27,7 +27,8 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg'
+  #gem 'pg'
+  gem "mysql2", "~> 0.3.14"
 end
 
 # Bundle the extra gems:
