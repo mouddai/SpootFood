@@ -9,8 +9,8 @@ default: &default
 
 production:
   <<: *default
-  config_file: "config/development.sphinx.conf"
-  pid_file: "log/searchd.development.pid"
+  config_file: "config/production.sphinx.conf"
+  pid_file: "log/searchd.production.pid"
 development:
   <<: *default
   config_file: "config/development.sphinx.conf"
