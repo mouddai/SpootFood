@@ -16,6 +16,9 @@ require File.expand_path('../../lib/sharetribe_logger', __FILE__)
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+
+config.assets.initialize_on_precompile = false
+
 module Kassi
   class Application < Rails::Application
     # This is a little cubersome, but this needs to be shared with the StylesheetCompiler,
