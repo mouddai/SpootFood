@@ -20,8 +20,6 @@ gem 'compass', '~> 0.13.alpha'
 
 gem 'jquery-rails', '3.1.3'
 
-gem install thinking-sphinx -v "~> 3.1.0"
-gem install mysql2 -v "~> 0.3.13"
 
 
 group :development, :test do
