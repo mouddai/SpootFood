@@ -20,6 +20,8 @@ gem 'compass', '~> 0.13.alpha'
 
 gem 'jquery-rails', '3.1.3'
 
+gem 'pg' 
+
 # Bundle the extra gems:
 
 # gem 'heroku' install the Heroku toolbelt (https://toolbelt.heroku.com/) instead (as gem had some problems)
