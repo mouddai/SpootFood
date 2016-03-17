@@ -22,13 +22,13 @@ gem 'jquery-rails', '3.1.3'
 
 
 group :development, :test do
-    #gem "mysql2", "~> 0.3.14"
-    gem 'pg' 
+    gem "mysql2", "~> 0.2.6"
+    #gem 'pg' 
 end
 
 group :production do
-  gem 'pg'
-  #gem "mysql2", "~> 0.3.14"
+  #gem 'pg'
+  gem "mysql2", "~> 0.2.6"
 end
 
 # Bundle the extra gems:
@@ -51,8 +51,8 @@ gem "will_paginate", '~>3.0.5'
 gem 'dalli', "~> 2.6.4"
 gem "memcachier", "~> 0.0.2"
 gem 'kgio', "~>2.9.2"
-#gem 'thinking-sphinx', '~> 3.1.1'
-#gem 'flying-sphinx', "~>1.2.0"
+gem 'thinking-sphinx', '~> 3.1.1'
+gem 'flying-sphinx', "~>1.2.0"
 # Use patched v2.0.2
 # Fixes issues: Create a new delayed delta job if there is an existing delta job which has failed
 gem 'ts-delayed-delta', "~>2.0.2",
