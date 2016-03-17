@@ -1,4 +1,5 @@
 require_relative './common.rb'
+config = 0 
 
 Kassi::Application.configure do
   # Settings specified here will take precedence over those in config/environment.rb
