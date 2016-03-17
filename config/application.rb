@@ -16,12 +16,12 @@ require File.expand_path('../../lib/sharetribe_logger', __FILE__)
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-
+config.assets.initialize_on_precompile = false
 
 
 module Kassi
   class Application < Rails::Application
-    config.assets.initialize_on_precompile = false
+    
     # This is a little cubersome, but this needs to be shared with the StylesheetCompiler,
     # and thus class const
     VENDOR_CSS_PATH = Rails.root.join("vendor", "assets", "stylesheets")
@@ -38,7 +38,7 @@ module Kassi
     config.autoload_paths += Dir[Rails.root.join('app', 'validators')]
 
     # Enable the asset pipeline
-    config.assets.enabled = true
+    config.assets.enabled = false
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
