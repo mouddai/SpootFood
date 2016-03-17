@@ -125,7 +125,7 @@ gem 'faraday_middleware', '~> 0.10.0'
 
 group :staging, :production do
   gem 'newrelic_rpm', '~> 3.9.1.236'
-  gem 'rails_12factor', '~> 0.0.3'
+  #gem 'rails_12factor', '~> 0.0.3'
 end
 
 group :development, :test do
