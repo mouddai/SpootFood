@@ -1,7 +1,9 @@
 require 'delayed_job'
 
-class DelayedJobLoggerPlugin < Delayed::Plugin
 
+
+class DelayedJobLoggerPlugin < Delayed::Plugin
+  Delayed::Worker.backend = :active_record
   callbacks do |lifecycle|
 
     lifecycle.around(:invoke_job) do |job, &block|

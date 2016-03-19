@@ -53,6 +53,7 @@ gem "memcachier", "~> 0.0.2"
 gem 'kgio', "~>2.9.2"
 gem 'thinking-sphinx', '~> 3.1.1'
 gem 'flying-sphinx', "~>1.2.0"
+
 # Use patched v2.0.2
 # Fixes issues: Create a new delayed delta job if there is an existing delta job which has failed
 gem 'ts-delayed-delta', "~>2.0.2",
@@ -61,10 +62,14 @@ gem 'ts-delayed-delta', "~>2.0.2",
   :ref    => '839284f2f28b3f4caf3a3bf5ccde9a6d222c7f4d'
 gem 'possibly', '~> 0.2.0'
 
-gem 'delayed_job', "~> 4.0.0"
-gem 'delayed_job_active_record'
-#gem 'delayed_job_active_record', "~> 4.0.0"
+#gem 'delayed_job', "~> 4.0.0"
+#gem 'delayed_job_active_record'
+gem 'delayed_job_active_record', "~> 4.0.0"
 #gem 'delayed_job_active_record', '0.4.3'
+gem 'rails_serve_static_assets', '~> 0.0.3'
+gem "daemon-spawn", "0.4.2" 
+gem 'daemons-rails', '~> 1.2', '>= 1.2.1'
+
 
 gem 'web_translate_it', "~>2.1.8"
 gem 'rails-i18n', '~> 4.0.8'

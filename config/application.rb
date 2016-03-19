@@ -16,7 +16,8 @@ require File.expand_path('../../lib/sharetribe_logger', __FILE__)
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-config.assets.initialize_on_precompile = false
+
+#config.assets.initialize_on_precompile = false
 
 
 module Kassi
@@ -28,7 +29,8 @@ module Kassi
 
     # Load all rack middleware files
     config.autoload_paths += %W(#{config.root}/lib/rack_middleware)
-   config.serve_static_assets = true
+   #config.serve_static_assets = false
+   config.serve_static_files =false
     # Load models from subdirectories too
     config.autoload_paths += Dir[Rails.root.join('app', 'models', '**/')]
     config.autoload_paths += Dir[Rails.root.join('app', 'services')]
