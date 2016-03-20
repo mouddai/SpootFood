@@ -63,8 +63,8 @@ gem 'ts-delayed-delta', "~>2.0.2",
 gem 'possibly', '~> 0.2.0'
 
 #gem 'delayed_job', "~> 4.0.0"
-#gem 'delayed_job_active_record'
-gem 'delayed_job_active_record', "~> 4.0.0"
+gem 'delayed_job_active_record'
+#gem 'delayed_job_active_record', "~> 4.0.0"
 #gem 'delayed_job_active_record', '0.4.3'
 gem 'rails_serve_static_assets', '~> 0.0.3'
 gem "daemon-spawn", "0.4.2" 
@@ -76,7 +76,7 @@ gem 'rails-i18n', '~> 4.0.8'
 gem 'devise', "~>3.5.0"
 gem 'devise-encryptable', '~> 0.2.0'
 gem "omniauth-facebook", "~> 3.0.0"
-#gem 'activeadmin', '~> 0.6.6'
+#gem 'activeadmin'
 
 # Dynamic form adds helpers that are needed, e.g. error_messages
 gem 'dynamic_form', "~>1.1.4"
@@ -133,7 +133,7 @@ gem 'faraday_middleware', '~> 0.10.0'
 
 group :staging, :production do
   gem 'newrelic_rpm', '~> 3.9.1.236'
-  #gem 'rails_12factor', '~> 0.0.3'
+  gem 'rails_12factor', '~> 0.0.3'
 end
 
 group :development, :test do
